@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2017
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Painbox 2018.1.4", "Painbox 2018.1.4.csproj", "{96D50CC3-E9B5-DFBF-A90F-D8839FD3FE22}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity.PackageManagerUI.Editor", "Unity.PackageManagerUI.Editor.csproj", "{6877705C-FBD9-0C4F-5AFB-6FB431E5D39D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnityEditor.StandardEvents", "UnityEditor.StandardEvents.csproj", "{6800202F-4402-D405-F8CB-03DC7BD78B92}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Painbox 2018.1.4.Editor", "Painbox 2018.1.4.Editor.csproj", "{067D6D15-7AAC-3623-795C-7D602E138578}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{96D50CC3-E9B5-DFBF-A90F-D8839FD3FE22}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{96D50CC3-E9B5-DFBF-A90F-D8839FD3FE22}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{96D50CC3-E9B5-DFBF-A90F-D8839FD3FE22}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{96D50CC3-E9B5-DFBF-A90F-D8839FD3FE22}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6877705C-FBD9-0C4F-5AFB-6FB431E5D39D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6877705C-FBD9-0C4F-5AFB-6FB431E5D39D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6877705C-FBD9-0C4F-5AFB-6FB431E5D39D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6877705C-FBD9-0C4F-5AFB-6FB431E5D39D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6800202F-4402-D405-F8CB-03DC7BD78B92}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6800202F-4402-D405-F8CB-03DC7BD78B92}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6800202F-4402-D405-F8CB-03DC7BD78B92}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6800202F-4402-D405-F8CB-03DC7BD78B92}.Release|Any CPU.Build.0 = Release|Any CPU
+		{067D6D15-7AAC-3623-795C-7D602E138578}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{067D6D15-7AAC-3623-795C-7D602E138578}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{067D6D15-7AAC-3623-795C-7D602E138578}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{067D6D15-7AAC-3623-795C-7D602E138578}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
