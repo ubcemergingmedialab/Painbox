@@ -1,9 +1,14 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 62fef80ec1f8ad34eb4f3f1491ccbbdf
+=======
+guid: 96e85b7c55c1a254283f9c5e1a140460
+>>>>>>> 4ac9deec3f418ae7447363e83c3c702d6c0cdee1
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
     100000: //RootNode
+<<<<<<< HEAD
     100002: Left_hand
     100004: Right_hand
     400000: //RootNode
@@ -20,6 +25,22 @@ ModelImporter:
     7400000: Default Take
     9500000: //RootNode
     2186277476908879412: ImportLogs
+=======
+    100002: Plane_001
+    100004: Right_hand
+    400000: //RootNode
+    400002: Plane_001
+    400004: Right_hand
+    2100000: unnamed
+    2300000: Plane_001
+    2300002: Right_hand
+    3300000: Plane_001
+    3300002: Right_hand
+    4300000: Plane_001
+    4300002: Right_hand
+    7400000: Default Take
+    9500000: //RootNode
+>>>>>>> 4ac9deec3f418ae7447363e83c3c702d6c0cdee1
   externalObjects: {}
   materials:
     importMaterials: 1
