@@ -7,12 +7,26 @@
         <ImageTarget name="boxbottomtest" size="0.185000 0.335032"/>
         <ImageTarget name="boxrighttest" size="0.335000 0.119963"/>
         <ImageTarget name="boxlefttest" size="0.335000 0.119909"/>
-        <ImageTarget name="painboxV1.Bottom" size="0.185000 0.335032"/>
-        <ImageTarget name="painboxV1.Back" size="0.185000 0.119975"/>
+        <ImageTarget name="painboxV2.Left" size="3.350000 1.199090"/>
+        <ImageTarget name="painboxV2.Right" size="3.350000 1.199633"/>
+        <ImageTarget name="painboxV2.Front" size="1.850000 1.199748"/>
+        <ImageTarget name="painboxV2.Back" size="1.850000 1.199748"/>
+        <ImageTarget name="painboxV2.Top" size="1.850000 3.350320"/>
+        <ImageTarget name="painboxV2.Bottom" size="1.850000 3.350320"/>
         <ImageTarget name="painboxV1.Left" size="0.335000 0.119909"/>
-        <ImageTarget name="painboxV1.Top" size="0.185000 0.335032"/>
-        <ImageTarget name="painboxV1.Front" size="0.185000 0.119975"/>
         <ImageTarget name="painboxV1.Right" size="0.335000 0.119963"/>
+        <ImageTarget name="painboxV1.Front" size="0.185000 0.119975"/>
+        <ImageTarget name="painboxV1.Back" size="0.185000 0.119975"/>
+        <ImageTarget name="painboxV1.Top" size="0.185000 0.335032"/>
+        <ImageTarget name="painboxV1.Bottom" size="0.185000 0.335032"/>
+        <MultiTarget name="painboxV2">
+            <Part name="painboxV2.Left" translation="-0.925000011920929 0 0" rotation="AD: 0 1 0 -90"/>
+            <Part name="painboxV2.Right" translation="0.925000011920929 0 0" rotation="AD: 0 1 0 90"/>
+            <Part name="painboxV2.Front" translation="0 0 1.6749999523162842" rotation="AD: 1 0 0 0"/>
+            <Part name="painboxV2.Back" translation="0 0 -1.6749999523162842" rotation="AD: 0 1 0 180"/>
+            <Part name="painboxV2.Top" translation="0 0.6000000238418579 0" rotation="AD: 1 0 0 -90"/>
+            <Part name="painboxV2.Bottom" translation="0 -0.6000000238418579 0" rotation="AD: 1 0 0 90"/>
+        </MultiTarget>
         <MultiTarget name="painboxV1">
             <Part name="painboxV1.Left" translation="-0.0925000011920929 0 0" rotation="AD: 0 1 0 -90"/>
             <Part name="painboxV1.Right" translation="0.0925000011920929 0 0" rotation="AD: 0 1 0 90"/>
