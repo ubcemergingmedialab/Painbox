@@ -6,6 +6,8 @@ public class KnifeBehaviour : MonoBehaviour {
 
     private MeshCollider KnifeCollider;
     private Vector3 KnifePosition;
+    public Texture Damage;
+    Renderer BalloonRenderer;
 
 
 
@@ -14,8 +16,16 @@ public class KnifeBehaviour : MonoBehaviour {
     {
         if (other.tag == "Balloon")
         {
+            BalloonRenderer = GetComponent<Renderer>();
+
+            BalloonRenderer.material.EnableKeyword("_NORMALMAP");
+            BalloonRenderer.material.EnableKeyword("_METALLICGLOSSMAP");
+
+            BalloonRenderer.material.SetTexture("MainTex",Damage);
+
+
             print("Testing");
-            Destroy(other.gameObject);
+          //  other.GetComponent < Material > = a;
         }
     }
 }
