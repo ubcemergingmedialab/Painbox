@@ -11,21 +11,44 @@ public class KnifeBehaviour : MonoBehaviour {
 
 
 
+
+
+
     // Update is called once per frame
-    private void OnTriggerEnter(Collider other)
+    /* private void OnTriggerEnter(Collider other)
+     {
+         if (other.tag == "Balloon")
+         {
+
+
+
+             //BalloonRenderer = other.gameObject.GetComponent<Renderer>();
+
+
+
+             // BalloonRenderer.material = Damage;
+
+
+             // BalloonRenderer.material.EnableKeyword("_NORMALMAP");
+             // BalloonRenderer.material.EnableKeyword("_METALLICGLOSSMAP");
+
+             //BalloonRenderer.material.mainTexture = Damage;
+
+
+             //print("Testing");
+         }
+     }*/
+
+    public void OnCollisionEnter(Collision collision)
     {
-        if (other.tag == "Balloon")
+
+
+        RaycastHit hit = new RaycastHit();
+        Ray ray = new Ray(collision.contacts[0].point - collision.contacts[0].normal, collision.contacts[0].normal);
+        if (Physics.Raycast(ray, out hit))
         {
-            BalloonRenderer = GetComponent<Renderer>();
 
-            BalloonRenderer.material.EnableKeyword("_NORMALMAP");
-            BalloonRenderer.material.EnableKeyword("_METALLICGLOSSMAP");
-
-            BalloonRenderer.material.SetTexture("MainTex",Damage);
-
-
-            print("Testing");
-          //  other.GetComponent < Material > = a;
+            print(hit.textureCoord);
         }
     }
 }
