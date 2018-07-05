@@ -1,8 +1,4 @@
 sceneSetups:
-<<<<<<< HEAD
 - path: Assets/Scenes/Abel-boxworkspace.unity
-=======
-- path: Assets/Scenes/Gloves.unity
->>>>>>> origin/devHandModel
   isLoaded: 1
   isActive: 1
