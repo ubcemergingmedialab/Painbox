@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/Abel-boxworkspace.unity
+- path: Assets/Scenes/Abel-boxWorkSPaceBuildTest.unity
   isLoaded: 1
   isActive: 1
