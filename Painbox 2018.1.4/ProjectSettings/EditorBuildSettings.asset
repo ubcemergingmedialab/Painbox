@@ -8,7 +8,10 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 99c9720ab356a0642a771bea13969a05
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Abel-boxworkspace.unity
     guid: 3781b9ace9ec03e40a7ec93cb2dc2320
+  - enabled: 1
+    path: Assets/Scenes/TestCameraAngle.unity
+    guid: 74a1e912cbecea8459da85c309ba2920
   m_configObjects: {}

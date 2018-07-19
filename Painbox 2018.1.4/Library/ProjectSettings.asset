@@ -262,14 +262,22 @@ PlayerSettings:
     m_Devices:
     - Oculus
     - OpenVR
+    - Vuforia
   - m_BuildTarget: Metro
     m_Enabled: 1
     m_Devices:
     - WindowsMR
+    - Vuforia
+  - m_BuildTarget: Android
+    m_Enabled: 1
+    m_Devices:
+    - Vuforia
   m_BuildTargetEnableVuforiaSettings:
   - m_BuildTarget: Standalone
     m_Enabled: 1
   - m_BuildTarget: Metro
+    m_Enabled: 1
+  - m_BuildTarget: Android
     m_Enabled: 1
   openGLRequireES31: 0
   openGLRequireES31AEP: 0
@@ -556,7 +564,7 @@ PlayerSettings:
   m_MobileRenderingPath: 1
   metroPackageName: Painbox2018.1.4
   metroPackageVersion: 1.0.0.0
-  metroCertificatePath: D:\Painbox\Penji\Painbox\Painbox 2018.1.4\Assets\WSATestCertificate.pfx
+  metroCertificatePath: Assets/WSATestCertificate.pfx
   metroCertificatePassword: 
   metroCertificateSubject: DefaultCompany
   metroCertificateIssuer: DefaultCompany
