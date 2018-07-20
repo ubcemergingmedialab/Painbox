@@ -5,13 +5,14 @@ using UnityEngine.UI;
 
 public class saveCamera : MonoBehaviour {
 
-    public Camera camera;
     public Button saveButton;
 
 	// Use this for initialization
 	void Start () {
         Debug.Log("App started");
-        saveButton.onClick.AddListener(Save); //Click only works once... Fix it
+
+        Button btn1 = saveButton.GetComponent<Button>();
+        btn1.onClick.AddListener(onSavePressed);
 
         //Setup a new file for writing
         //Create new file based on current time
@@ -23,10 +24,11 @@ public class saveCamera : MonoBehaviour {
 	}
 
     //Save
-    void Save()
+    void onSavePressed()
     {
         Debug.Log("You have clicked the button!");
-        //Record the camera.position and camera.rotation
+        Vector3 position = transform.position;
+        float xRotation = transform.eulerAngles.x;
 
         //Open the file
 
