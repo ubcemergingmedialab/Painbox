@@ -5,17 +5,24 @@ using UnityEngine.UI;
 
 public class saveCamera : MonoBehaviour {
 
+    private System.IO.StreamWriter file;
+    private string logName;
     public Button saveButton;
+    public string directoryPath;
 
 	// Use this for initialization
 	void Start () {
-        Debug.Log("App started");
-
+        string time = System.DateTime.Now.ToFileTimeUtc().ToString();
+        logName = @directoryPath + @"\Log-" + time + ".txt";
+        using (file =
+            new System.IO.StreamWriter(logName))
+        {
+            file.WriteLine("file initialized on " + System.DateTime.Now.ToUniversalTime() + "\n");
+        }
+        
         Button btn1 = saveButton.GetComponent<Button>();
         btn1.onClick.AddListener(onSavePressed);
 
-        //Setup a new file for writing
-        //Create new file based on current time
     }
 	
 	// Update is called once per frame
@@ -30,10 +37,17 @@ public class saveCamera : MonoBehaviour {
         Vector3 position = transform.position;
         float xRotation = transform.eulerAngles.x;
 
-        //Open the file
+        using (file =
+            new System.IO.StreamWriter(logName, true))
+        {
+            file.WriteLine("===========================================================================");
+            file.WriteLine("Save pressed at " + System.DateTime.Now.ToString());
+            file.WriteLine("Position: x: " + position.x + ", y:" + position.y + ", z:" + position.z);
+            file.WriteLine("x Rotation: " + xRotation);
+            file.WriteLine("===========================================================================");
+            file.WriteLine("\n");
+        }
+       
 
-        //Append the new data values
-
-        //Close the file
     }
 }
