@@ -5,10 +5,11 @@ using UnityEngine.UI;
 
 public class CameraPosition : MonoBehaviour {
 
-    public float positionUnits;
-    public float rotationUnits;
+    private float positionUnits;
+    private float rotationUnits;
     public Button leftButton, rightButton, forwardButton, backButton, upButton, downButton, rotateUp, rotateDown;
-    public Text xText, yText, zText, rotateText;
+    public Text xText, yText, zText, rotateText, posUnitText, rotUnitText;
+    public Slider posControl, rotControl;
 
 	void Start () {
         Button left = leftButton.GetComponent<Button>();
@@ -19,6 +20,17 @@ public class CameraPosition : MonoBehaviour {
         Button back = backButton.GetComponent<Button>();
         Button upR = rotateUp.GetComponent<Button>();
         Button downR = rotateDown.GetComponent<Button>();
+        Slider posUnit = posControl.GetComponent<Slider>();
+        Slider rotUnit = rotControl.GetComponent<Slider>();
+
+        rotationUnits = VariableController.rotationUnits;
+        positionUnits = VariableController.positionUnits;
+
+        posUnit.value = positionUnits;
+        rotUnit.value = rotationUnits;
+
+        posUnit.onValueChanged.AddListener(posDragged);
+        rotUnit.onValueChanged.AddListener(rotDragged);
 
         left.onClick.AddListener(leftClick);
         right.onClick.AddListener(rightClick);
@@ -33,9 +45,21 @@ public class CameraPosition : MonoBehaviour {
         yText.text = "Y Pos:\n" + transform.position.y;
         zText.text = "Z Pos:\n" + transform.position.z;
         rotateText.text = "Rotation:\n" + transform.eulerAngles.x;
+        rotUnitText.text = "Rotation Units: " + rotationUnits;
+        posUnitText.text = "Position Units: " + positionUnits;
     }
-
-
+    void posDragged(float args)
+    {
+        positionUnits = args;
+        posUnitText.text = "Position Units: " + positionUnits;
+        VariableController.positionUnits = positionUnits;
+    }
+    void rotDragged(float args)
+    {
+        rotationUnits = args;
+        rotUnitText.text = "Rotation Units: " + rotationUnits;
+        VariableController.rotationUnits = rotationUnits;
+    }
     void leftClick()
     {
         Vector3 initial = transform.position;

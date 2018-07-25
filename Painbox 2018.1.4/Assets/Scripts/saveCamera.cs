@@ -8,10 +8,11 @@ public class saveCamera : MonoBehaviour {
     private System.IO.StreamWriter file;
     private string logName;
     public Button saveButton;
-    public string directoryPath;
+    private string directoryPath;
 
 	// Use this for initialization
 	void Start () {
+        directoryPath = VariableController.path;
         string time = System.DateTime.Now.ToFileTimeUtc().ToString();
         logName = @directoryPath + @"\Log-" + time + ".txt";
         using (file =
