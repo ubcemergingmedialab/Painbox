@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/UI/MainMenu.unity
+- path: Assets/Scenes/HandAnimations.unity
   isLoaded: 1
   isActive: 1
