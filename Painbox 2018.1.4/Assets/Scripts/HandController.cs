@@ -14,23 +14,29 @@ public class HandController : MonoBehaviour {
         animator = GetComponent<Animator>();
     }
     void Update () {
+
+        //Vertical Swing
         if (Input.GetKeyDown("1"))
         {
+          
             print("1");
-            animator.SetInteger("HandState", 1);
+            animator.SetInteger("Hand State", 1);
         }
+        //Horizontal Stab
         if (Input.GetKeyDown("2"))
         {
-            animator.SetInteger("HandState", 2);
+            animator.SetInteger("Hand State", 2);
         }
+        //Vertical Stab
         if (Input.GetKeyDown("3"))
         {
-            animator.SetInteger("HandState", 3);
+            animator.SetInteger("Hand State", 3);
             //     animator.GetCurrentAnimatorClipInfo
         }
         if (Input.GetKeyDown("0"))
         {
-            animator.SetInteger("HandState", 0);
+            animator.SetInteger("Hand State", 0);
         }
+       
     }
 }
