@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/HandAnimations.unity
+- path: Assets/Scenes/HorizontalStab.unity
   isLoaded: 1
   isActive: 1

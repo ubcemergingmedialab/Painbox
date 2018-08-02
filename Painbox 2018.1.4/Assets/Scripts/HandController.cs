@@ -4,37 +4,60 @@ using UnityEngine;
 
 public class HandController : MonoBehaviour {
     Animator animator;
+    Animation CurrentAnimation;
+
+    int VerticalSwing = Animator.StringToHash("VS");
+    int VerticalStab = Animator.StringToHash("VST");
+
+    int HorizontalStab = Animator.StringToHash("HS");
+
+
+
 
 
     // Update is called once per frame
 
     private void Start()
     {
+        
 
         animator = GetComponent<Animator>();
+        print("Should say 0: " + animator.GetCurrentAnimatorClipInfo(0).Length);
+
+
     }
     void Update () {
 
+       
         //Vertical Swing
-        if (Input.GetKeyDown("1"))
+       
+        if (Input.GetKeyDown(KeyCode.Alpha1))
         {
-          
-            print("1");
-            animator.SetInteger("Hand State", 1);
+
+            print("q");
+            animator.SetTrigger(VerticalStab);
+           
+
+
         }
         //Horizontal Stab
-        if (Input.GetKeyDown("2"))
+        if (Input.GetKeyDown(KeyCode.Alpha2))
         {
-            animator.SetInteger("Hand State", 2);
+            print("w");
+
+            animator.SetTrigger(VerticalSwing);
         }
         //Vertical Stab
-        if (Input.GetKeyDown("3"))
+        if (Input.GetKeyDown(KeyCode.Alpha3))
         {
-            animator.SetInteger("Hand State", 3);
+            print("e");
+
+            animator.SetTrigger(HorizontalStab);
             //     animator.GetCurrentAnimatorClipInfo
         }
-        if (Input.GetKeyDown("0"))
+        if (Input.GetKeyDown(KeyCode.Alpha4))
         {
+            print("r");
             animator.SetInteger("Hand State", 0);
         }
        
